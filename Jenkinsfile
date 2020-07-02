@@ -34,7 +34,7 @@ pipeline{
 				withAWS(region:'us-west-2', credentials:'surelay') {
 					sh '''
 						eksctl create cluster \
-						--name capstone-project \
+						--name capstone-final-project \
 						--version 1.13 \
 						--nodegroup-name standard-workers \
 						--node-type t2.small \
